@@ -1816,7 +1816,6 @@ interface BracketOptions<TTeam, TScore, TMData, TUData> {
     const resultId = new ResultId();
 
     const data = opts.init;
-    console.log(opts);
     if (opts.autoSizeTeamWidth === true) {
       let maxWidth = 0;
       // Full structure must be made in case of user styles
