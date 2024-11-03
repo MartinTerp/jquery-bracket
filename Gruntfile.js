@@ -1,3 +1,5 @@
+const sass = require('sass');
+
 module.exports = function(grunt) {
   grunt.initConfig({
     licenseString:
@@ -10,6 +12,9 @@ module.exports = function(grunt) {
       }
     },
     sass: {
+      options: {
+        implementation: sass,
+      },
       dist: {
         files: {
           "dist/jquery.bracket.css": "src/jquery.bracket.scss"
